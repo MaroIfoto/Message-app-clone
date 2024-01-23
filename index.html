@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:wght@300;400;500;700;900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="person-selector">
+        <button class="button person-selector-button active-person" id="john-selector">John</button>
+        <button class="button person-selector-button" id="jane-selector">Jane</button>
+    </div>
+    <div class="chat-container">
+        <h2 class="chat-header">John chatting...</h2>
+
+        <div class="chat-messages">
+            <div class="message blue-bg">
+                <div class="message-sender">John</div>
+                <div class="message-text">Hey Jane, what's up?</div>
+                <div class="message-timestamp">00:00 am</div>
+            </div>
+            <div class="message grey-bg">
+                <div class="message-sender">Jane</div>
+                <div class="message-text">Hey John, sorry I'm replying so late, I was busy</div>
+                <div class="message-timestamp">6:00 am</div>
+            </div>
+        </div>    
+        <form id="chatForm"  class="chat-input-form">
+            <input type="text" class="chat-input" required placeholder="Message, John">
+            <button type="submit" class="button send-button">Send</button>
+        </form>
+        <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+</body>
+</html> 
